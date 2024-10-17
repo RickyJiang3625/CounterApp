@@ -1,10 +1,23 @@
 <html>
      <head>
         <link rel="stylesheet" href="style.css">
-        <script src="index.js"></script>
+
     </head>
     <body>
                 <h1>Students entered:</h1>
                 <h2 id="count-el">0</h2>
-    </body>
+                
+                <button id="increment-btn" onclick="increment()">INCREMENT</button>
+    </body>        
+    <script src="index.js"></script>
+    <script>
+                    let count = 0;
+            function increment() {
+                count = count +1
+                console.log(count)
+                document.getElementById("count-el").innerHTML = count;
+                
+
+            }
+    </script>
 </html>
