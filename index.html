@@ -8,16 +8,10 @@
                 <h2 id="count-el">0</h2>
                 
                 <button id="increment-btn" onclick="increment()">INCREMENT</button>
+                <button id="save-btn" onclick="save()">SAVE</button>
+                <button id="decrement-btn" onclick="decrement()">DECREMENT</button>
+                <p id="saves">Previous entries: </p>
     </body>        
     <script src="index.js"></script>
-    <script>
-                    let count = 0;
-            function increment() {
-                count = count +1
-                console.log(count)
-                document.getElementById("count-el").innerHTML = count;
-                
 
-            }
-    </script>
 </html>
